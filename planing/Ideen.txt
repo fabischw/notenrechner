@@ -1,0 +1,3 @@
+-trigger EInrichten für Summentabellen
+-foreign key constraints auf DB
+-
