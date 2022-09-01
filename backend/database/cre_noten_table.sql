@@ -17,7 +17,7 @@ create table noten
   noten_kommentar				VARCHAR2(100),
   noten_doclink                 VARCHAR2(200),
   noten_date                    DATE,
-  noten_anz_year                DATE,
+  noten_anz_year                VARCHAR2(100),
   noten_fach                    VARCHAR(50) not null,
   noten_lehrer_kurz             VARCHAR(5) not null,
   cre_userid                    VARCHAR2(30),

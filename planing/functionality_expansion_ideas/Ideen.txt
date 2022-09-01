@@ -1,0 +1,3 @@
+-Arbeiten / Events in Google Kalender schreiben über API
+-Noten in Excel Dokument / DBX exportieren
+-

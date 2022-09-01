@@ -1,2 +1,3 @@
 -OracleDB Nutzer "NOTENRECHNER" angelegt
 -Dokumentation des Frotschritts verbessert
+-mit Planung der Datenstruktur auf der DB begonnen
