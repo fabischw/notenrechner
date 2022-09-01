@@ -1,0 +1,8 @@
+https://oracle.github.io/python-oracledb/samples/tutorial/Python-and-Oracle-Database-The-New-Wave-of-Scripting.html
+https://oracle.github.io/python-oracledb/
+https://python-oracledb.readthedocs.io/en/latest/
+
+
+https://python-oracledb.readthedocs.io/en/latest/user_guide/initialization.html#enablingthick #wichig, sonst kein Support für höhere Versionen
+
+

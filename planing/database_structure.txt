@@ -1,0 +1,13 @@
+table 1:
+Lehrer-Kürzel   Lehrer-Name     Fächer (in extra Tabelle)
+
+
+
+
+
+table 2:
+Noten-ID    Noten-Score     Lehrer-Kürzel       Datum
+
+
+
+
