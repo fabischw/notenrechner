@@ -1,0 +1,15 @@
+(Rückwirkend)
+
+-Oracle Datenbank 21c XE installiert
+-Oracle SQLDeveloper installiert (main IDE für SQL Entwicklung auf der Datenbank)
+-Struktur zu Projekt hinzugefügt
+
+Wichtiger Hinweis:
+Dies ist nicht dererste Versuch den Notenrechner gut zu strukturieren
+und die Arbeit daran voranzubringen, vorherige Projekte sind bereits
+in der Planungsphase bzw. in der frühen Entwicklungsphase gescheitert,
+diese repository markiert den Beginn des finalen Projekts mit (hoffentlich)
+guter Struktur und FUnktionalität
+
+
+(Initialized repo before the 31. of august)

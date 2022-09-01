@@ -1,0 +1,2 @@
+-OracleDB Nutzer "NOTENRECHNER" angelegt
+-Dokumentation des Frotschritts verbessert
