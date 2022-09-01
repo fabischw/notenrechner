@@ -4,8 +4,8 @@
 --remap_schema=produktiv:GGEW
 
 
-CREATE OR REPLACE DIRECTORY DATA_PUMP_DIR AS 'C:\Users\Fabian\Documents\NOTENRECHNER\final\backend\database\dump';
-expdp notenrechner/pnotenrechner@xe directory=DUMP_ORACLE_DIR dumpfile=notenrechner.dmp logfile=notenrechner.log
+CREATE OR REPLACE DIRECTORY DATA_PUMP_DIR AS 'C:\app\Fabian\dump';
+expdp notenrechner/pnotenrechner@xe directory=DUMP_ORACLE_DIR dumpfile=notenrechner.dmp logfile=notenrechner.log reuse_dumpfiles=y
 
 
 
