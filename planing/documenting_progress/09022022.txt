@@ -1,0 +1,2 @@
+-Datenstruktur V1 finalisiert
+-Skript für Erstellung der Tabellen angelegt

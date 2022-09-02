@@ -1,0 +1,4 @@
+-Kalender_id als foreign key in table schueler eintragen
+    -> später DB trigger für Aktualisierung Kalender pro Schüler anstoßen, in Kalender nicht zwischen events unterscheiden (wird frontend verarbeitet)
+
+-REF Tabellen anlegen
