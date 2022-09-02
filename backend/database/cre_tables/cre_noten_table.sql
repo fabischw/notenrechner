@@ -14,7 +14,7 @@ create table noten
   noten_id                      NUMBER(10) not null,
   noten_score                   NUMBER(2) not null,
   noten_type                    VARCHAR(10)  not null,
-  noten_kommentar				VARCHAR2(100),
+  noten_kommentar				        VARCHAR2(100),
   noten_doclink                 VARCHAR2(200),
   noten_date                    DATE,
   noten_anz_year                VARCHAR2(100),

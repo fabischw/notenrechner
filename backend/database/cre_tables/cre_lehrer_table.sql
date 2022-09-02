@@ -14,7 +14,7 @@ create table lehrer
   lehrer_id                      NUMBER(10) not null,
   lehrer_vorname                 VARCHAR(30) not null,
   lehrer_nachname                VARCHAR(30)  not null,
-  lehrer_vorname2				         VARCHAR2(30),
+  lehrer_vorname2				 VARCHAR2(30),
   lehrer_email                   VARCHAR(30) not null,
   lehrer_kuerzel                 VARCHAR(5) not null,
   lehrer_an_schule_seit          DATE,
