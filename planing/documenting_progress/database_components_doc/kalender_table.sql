@@ -73,6 +73,3 @@ create index IDX_kalender02 on kalender (kalender_id,datum,descript,cre_date,cre
     maxextents unlimited
   );
   
-  
-  
-  

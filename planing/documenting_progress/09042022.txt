@@ -1,2 +1,0 @@
--cre_notenrechner_db_structures.sql fertig gestellt
--alle tables als backup einzeln gesichert in database_components_doc
