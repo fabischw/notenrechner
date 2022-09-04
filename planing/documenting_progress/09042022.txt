@@ -1,0 +1,1 @@
+-Expaneded table creation template for database structure
