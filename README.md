@@ -1,7 +1,7 @@
 # Notenrechner
 
 <div style='display: flex; flex-flow: row;'>
-<img src="./docs/logo/Notenrechner_logo.png" alt="Notenrechner logo" style='width: 30%;'>
+<img src="./docs/logo/Notenrechner_logo.png" alt="Notenrechner logo" style='width: 50%;'>
 </div>
 
 This is a  project to track my school grades and courses, for further information check the notes in your corresponding language.
@@ -40,4 +40,4 @@ This is a  project to track my school grades and courses, for further informatio
 ### REQUIREMENTS
 - Python (3.9+)
 - package list check requirements.txt
-- Oracle database (only testeds 21c XE)
+- Oracle database (only tested 21c XE)
