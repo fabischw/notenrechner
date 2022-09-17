@@ -40,4 +40,4 @@ This is a  project to track my school grades and courses, for further informatio
 ### REQUIREMENTS
 - Python (3.9+)
 - package list check requirements.txt
-- Oracle database (only test 21c XE)
+- Oracle database (only testeds 21c XE)
