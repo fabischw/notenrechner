@@ -1,0 +1,1 @@
+-Lokale repo clones angelegt, um Entwicklung der Datenbankstruktur und deployment zu finalisieren
