@@ -1533,7 +1533,7 @@ create index IDX_PERMISSIONN02 on PERMISSIONN (PERMISSIONN_id,table_name,table_s
 
 
    -- Create sequence 
-create sequence S_USERRUSERRPERMISSIONNREFNREF
+create sequence S_USERRPERMISSIONNREF
 minvalue 1
 maxvalue 9999999999
 start with 1
