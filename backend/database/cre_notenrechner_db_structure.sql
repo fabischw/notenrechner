@@ -1147,7 +1147,7 @@ create index IDX_kursstundenref02 on kursstundenref (kursstundenref_id,kurs_id,s
 
 
 -- Create sequence 
-create sequence S_LOG
+create sequence S_LOGS
 minvalue 1
 maxvalue 9999999999
 start with 1
@@ -1194,7 +1194,7 @@ comment on column LOGS.chg_date is 'mögliches Änderungsdatum der eingetragenen D
 comment on column LOGS.chg_userid is 'möglicher Änderungsuser der eingetragenen Daten';
 
 
-create unique index IDX_PK_LOG01 on LOG (LOG_id)
+create unique index IDX_PK_LOGS01 on LOG (LOG_id)
   tablespace users
   pctfree 10
   initrans 2
@@ -1208,7 +1208,7 @@ create unique index IDX_PK_LOG01 on LOG (LOG_id)
   );
 
 --Index für Daten, die oft abgerufen werden
-create index IDX_LOG02 on LOG (LOG_id,table_id,updt_user,update_type,cre_date,cre_userid,chg_date,chg_userid)
+create index IDX_LOGS02 on LOGS (LOG_id,table_id,updt_user,update_type,cre_date,cre_userid,chg_date,chg_userid)
   tablespace users
   pctfree 10
   initrans 2
