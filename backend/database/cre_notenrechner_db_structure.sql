@@ -1159,11 +1159,11 @@ cycle;
 -- Create table
 create table LOGS
 (
-  LOG_id                        NUMBER(10) not null,
+  LOGS_id                        NUMBER(10) not null,
   table_id                      NUMBER(10) not null,
   updt_user                     VARCHAR2(30) ,
   update_type                   VARCHAR2(30) ,
-  message                       VARCHAR2(50) ,
+  LOG_message                       VARCHAR2(50) ,
   cre_userid                    VARCHAR2(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
@@ -1183,7 +1183,7 @@ tablespace users
   );
   
 -- Add comments to the columns 
-comment on column LOGS.LOG_id is 'ID LOG';
+comment on column LOGS.LOGS_id is 'ID LOGS';
 comment on column LOGS.table_id is 'table ID';
 comment on column LOGS.updt_user is 'Username des update Users';
 comment on column LOGS.update_type is 'Update typ';
@@ -1236,7 +1236,7 @@ cycle;
 
 
 -- Create table
-create table DELLL
+create table DELL
 (
   DELL_id                       NUMBER(10) not null,
   memory_location               VARCHAR2(500) ,
