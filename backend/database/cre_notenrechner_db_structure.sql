@@ -1369,4 +1369,236 @@ create index IDX_TABLESS02 on TABLESS (TABLESS_id,table_name,cre_date,cre_userid
     maxextents unlimited
   );
    
+
+
+--USERR table
+
+   -- Create sequence 
+create sequence S_USERR
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1
+cache 10
+cycle;
+
+
+-- Create table
+create table USERR
+(
+  USERR_id                      NUMBER(10) not null,
+  user_short                    VARCHAR(30)not null ,
+  userdate                      DATE not null,
+  vorname                       VARCHAR(30) not null,
+  nachname                      VARCHAR(30) not null,
+  vorname2                      VARCHAR2(30) ,
+  user_rank                     VARCHAR(30) not null,
+  cre_userid                    VARCHAR2(30) not null,
+  cre_date                      DATE not null,
+  chg_userid                    VARCHAR2(30),
+  chg_date                      DATE
+)
+
+tablespace users
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
   
+-- Add comments to the columns 
+comment on column USERR.USERR_id is 'ID USERR';
+comment on column USERR.user_short is 'Userkürzel';
+comment on column USERR.userdate is 'Datum, wann der Nutzer zum Team hinzugekommen ist';
+comment on column USERR.vorname is 'Vorname des Users';
+comment on column USERR.nachname is 'Nachname des Users';
+comment on column USERR.vorname2 is '2. Vorname des Users';
+comment on column USERR.user_rank is 'Rang/Position des Users';
+comment on column USERR.cre_date is 'Zeitpunkt der Eintragung';
+comment on column USERR.cre_userid is 'USER_ID der Eintragung';
+comment on column USERR.chg_date is 'mögliches Änderungsdatum der eingetragenen Daten';
+comment on column USERR.chg_userid is 'möglicher Änderungsuser der eingetragenen Daten';
+
+
+create unique index IDX_PK_USERR01 on USERR (USERR_id)
+  tablespace users
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+--Index für Daten, die oft abgerufen werden
+create index IDX_USERR02 on USERR (USERR_id,user_short,userdate,vorname,nachname,user_rank,cre_date,cre_userid,chg_date,chg_userid)
+  tablespace users
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+
+--PERMISSIONN table
+
+   -- Create sequence 
+create sequence S_PERMISSIONN
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1
+cache 10
+cycle;
+
+
+-- Create table
+create table PERMISSIONN
+(
+  PERMISSIONN_id                NUMBER(10) not null,
+  table_name                    VARCHAR(50)not null ,
+  table_scope                   VARCHAR(30) not null,
+  cre_userid                    VARCHAR2(30) not null,
+  cre_date                      DATE not null,
+  chg_userid                    VARCHAR2(30),
+  chg_date                      DATE
+)
+
+tablespace users
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
+  
+-- Add comments to the columns 
+comment on column PERMISSIONN.PERMISSIONN_id is 'ID PERMISSIONN';
+comment on column PERMISSIONN.table_name is 'Name des tables, für den die Berechtigungen gelten';
+comment on column PERMISSIONN.table_scope is 'permission scope des tables';
+comment on column PERMISSIONN.cre_date is 'Zeitpunkt der Eintragung';
+comment on column PERMISSIONN.cre_userid is 'USER_ID der Eintragung';
+comment on column PERMISSIONN.chg_date is 'mögliches Änderungsdatum der eingetragenen Daten';
+comment on column PERMISSIONN.chg_userid is 'möglicher Änderungsuser der eingetragenen Daten';
+
+
+create unique index IDX_PK_PERMISSIONN01 on PERMISSIONN (PERMISSIONN_id)
+  tablespace users
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+--Index für Daten, die oft abgerufen werden
+create index IDX_PERMISSIONN02 on PERMISSIONN (PERMISSIONN_id,table_name,table_scope,cre_date,cre_userid,chg_date,chg_userid)
+  tablespace users
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+
+
+
+-- USERR-PERMISSIONN-REF
+
+
+   -- Create sequence 
+create sequence S_USERRUSERRPERMISSIONNREFNREF
+minvalue 1
+maxvalue 9999999999
+start with 1
+increment by 1
+cache 10
+cycle;
+
+
+-- Create table
+create table USERRPERMISSIONNREF
+(
+  USERRPERMISSIONNREF_id        NUMBER(10) not null,
+  USERR_id                      NUMBER(10)not null ,
+  PERMISSIONN_id                NUMBER(10) not null,
+  cre_userid                    VARCHAR2(30) not null,
+  cre_date                      DATE not null,
+  chg_userid                    VARCHAR2(30),
+  chg_date                      DATE
+)
+
+tablespace users
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
+  
+-- Add comments to the columns 
+comment on column USERRPERMISSIONNREFN.USERRPERMISSIONNREF_id is 'ID USERRPERMISSIONNREF';
+comment on column USERRPERMISSIONNREF.USERR_id is 'USERR ID';
+comment on column USERRPERMISSIONNREF.PERMISSIONN_id is 'PERMISSIONN ID';
+comment on column USERRPERMISSIONNREF.cre_date is 'Zeitpunkt der Eintragung';
+comment on column USERRPERMISSIONNREF.cre_userid is 'USER_ID der Eintragung';
+comment on column USERRPERMISSIONNREFREF.chg_date is 'mögliches Änderungsdatum der eingetragenen Daten';
+comment on column USERRPERMISSIONNREF.chg_userid is 'möglicher Änderungsuser der eingetragenen Daten';
+
+
+create unique index IDX_PK_USERRPERMISSIONNREF01 on USERRPERMISSIONNREF (USERRPERMISSIONNREF_id)
+  tablespace users
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
+
+--Index für Daten, die oft abgerufen werden
+create index IDX_USERRPERMISSIONNREF02 on USERRPERMISSIONNREF (USERRPERMISSIONNREF_id,USERR_id,PERMISSIONN_id,cre_date,cre_userid,chg_date,chg_userid)
+  tablespace users
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 64K
+    minextents 1
+    maxextents unlimited
+  );
