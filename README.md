@@ -44,3 +44,8 @@ This is a  project to track my school grades and courses, for further informatio
 - [Python (3.9+)](https://www.python.org/)
 - [package list](./requirements.txt)
 - [Oracle database (only tested 21c XE)](https://www.oracle.com/database/technologies/appdev/xe.html)
+
+
+### LICENSE
+- [GNU Lesser public license](./LICENSE)
+- NOTE: LICENSE DOES NOT INCLUDE planing folder!!
