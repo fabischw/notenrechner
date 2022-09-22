@@ -2,7 +2,7 @@
 - This README is meant to outline the fundamental  data structure behind the Notenrechner Oracle database
 
 # general structure of the database
-- Link to datastructure blueprint:
+- [database blueprint](./linked_resources/tables/blueprint.drawio)
 - Link to the file to create the databse structure: 
 
 #### Administrative tables
