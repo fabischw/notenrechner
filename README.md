@@ -47,5 +47,5 @@ This is a  project to track my school grades and courses, for further informatio
 
 
 ### LICENSE
-- [GNU Lesser public license](./LICENSE)
-- NOTE: LICENSE DOES NOT INCLUDE planing folder!!
+- [LICENSE](./LICENSE)
+- NOTE: LICENSE DOES NOT INCLUDE planing folder!!, check the planing folder license [here](./planing/LICENSE)
