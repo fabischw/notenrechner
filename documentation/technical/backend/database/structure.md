@@ -35,3 +35,30 @@
 
 ### Explanation behind structure
 This structure was chosen as a result of different facotrs and requirements set up for the database structure, it needs to be highly efficient when it coems to reading operations since the notenrechner has to work with data warehouse applications, it achieves these goals by using sequences and other techniques
+
+
+### structure table
+
+| Table_name             | table_id | table_usecase | table_content(link) |   |
+|------------------------|----------|---------------|---------------------|---|
+| kurse                  | 1        | data          |                     |   |
+| stunden                | 2        | data          |                     |   |
+| fach                   | 3        | data          |                     |   |
+| Schul_events           | 4        | data          |                     |   |
+| arbeiten               | 5        | data          |                     |   |
+| kalender               | 6        | data          |                     |   |
+| schueler               | 7        | data          |                     |   |
+| noten                  | 8        | data          |                     |   |
+| lehrer                 | 9        | data          |                     |   |
+| fach                   | 10       | data          |                     |   |
+| kurse-events-ref       | 11       | ref           |                     |   |
+| kurse-stunden-ref      | 12       | ref           |                     |   |
+| kurs-schueler-ref      | 13       | ref           |                     |   |
+| lehrer-fach-ref        | 14       | ref           |                     |   |
+| noten-schueler-ref     | 15       | ref           |                     |   |
+| userss-permissions-ref | 16       | ref           |                     |   |
+| TABLESS                | 17       | system        |                     |   |
+| LOGSS                  | 18       | system        |                     |   |
+| USERSS                 | 19       | system        |                     |   |
+| DELL                   | 20       | system        |                     |   |
+| PERMISSIONS            | 21       | system        |                     |   |
