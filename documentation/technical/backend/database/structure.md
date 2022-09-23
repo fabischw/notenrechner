@@ -39,28 +39,28 @@ This structure was chosen as a result of different facotrs and requirements set 
 
 ### structure table
 
-| Table_name             | table_id | table_usecase | table_content(link) |
-|------------------------|----------|---------------|---------------------|
-| kurse                  | 1        | data          |                     |
-| stunden                | 2        | data          |                     |
-| fach                   | 3        | data          |                     |
-| Schul_events           | 4        | data          |                     |
-| arbeiten               | 5        | data          |                     |
-| kalender               | 6        | data          |                     |
-| schueler               | 7        | data          |                     |
-| noten                  | 8        | data          |                     |
-| lehrer                 | 9        | data          |                     |
-| fach                   | 10       | data          |                     |
-| kurse-events-ref       | 11       | ref           |                     |
-| kurse-stunden-ref      | 12       | ref           |                     |
-| kurs-schueler-ref      | 13       | ref           |                     |
-| lehrer-fach-ref        | 14       | ref           |                     |
-| noten-schueler-ref     | 15       | ref           |                     |
-| userss-permissions-ref | 16       | ref           |                     |
-| TABLESS                | 17       | system        |                     |
-| LOGSS                  | 18       | system        |                     |
-| USERSS                 | 19       | system        |                     |
-| DELL                   | 20       | system        |                     |
-| PERMISSIONS            | 21       | system        |                     |
+| Table_name                                                                        | table_id | table_usecase | table_content(link) |
+|-----------------------------------------------------------------------------------|----------|---------------|---------------------|
+| [kurse](./linked_resources/tables/data/kurse.md)                                  | 1        | data          |                     |
+| [stunden](./linked_resources/tables/data/stunden.md)                              | 2        | data          |                     |
+| [fach](./linked_resources/tables/data/fach.md)                                    | 3        | data          |                     |
+| [Schul_events](./linked_resources/tables/data/schul_events.md)                    | 4        | data          |                     |
+| [arbeiten](./linked_resources/tables/data/arbeiten.md)                            | 5        | data          |                     |
+| [kalender](./linked_resources/tables/data/kalender.md)                            | 6        | data          |                     |
+| [schueler](./linked_resources/tables/data/schueler.md)                            | 7        | data          |                     |
+| [noten](./linked_resources/tables/data/noten.md)                                  | 8        | data          |                     |
+| [lehrer](./linked_resources/tables/data/lehrer.md)                                | 9        | data          |                     |
+| [fach](./linked_resources/tables/data/fach.md)                                    | 10       | data          |                     |
+| [kurse-events-ref](./linked_resources/tables/ref/kurse-events-ref.md)             | 11       | ref           |                     |
+| [kurse-stunden-ref](./linked_resources/tables/ref/kurse-stunden-ref.md)           | 12       | ref           |                     |
+| [kurs-schueler-ref](./linked_resources/tables/ref/kurs-schueler-ref.md)           | 13       | ref           |                     |
+| [lehrer-fach-ref](./linked_resources/tables/ref/lehrer-fach-ref.md)               | 14       | ref           |                     |
+| [noten-schueler-ref](./linked_resources/tables/ref/noten-schueler-ref.md)         | 15       | ref           |                     |
+| [userss-permissions-ref](./linked_resources/tables/ref/userss-permissions-ref.md) | 16       | ref           |                     |
+| [TABLESS](./linked_resources/tables/sys/TABLESS.md)                               | 17       | system        |                     |
+| [LOGSS](./linked_resources/tables/sys/LOGSS.md)                                   | 18       | system        |                     |
+| [USERSS](./linked_resources/tables/sys/USERSS.md)                                 | 19       | system        |                     |
+| [DELL](./linked_resources/tables/sys/DELL.md)                                     | 20       | system        |                     |
+| [PERMISSIONS](./linked_resources/tables/sys/PERMISSIONS.md)                       | 21       | system        |                     |
 
 - NOTE: some table names are misspelled on purpose since oracle reserves some keywords like logs, users et.
