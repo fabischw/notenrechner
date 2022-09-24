@@ -1,2 +1,2 @@
-backend/database/auth
-backend/database/sensitive_info
+backend/database/run_once_scripts/insert_data/private
+backend/database/run_once_scripts/insert_data/semi
