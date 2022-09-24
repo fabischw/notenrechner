@@ -24,11 +24,11 @@ insert into TABLESS
 VALUES
 (S_TABLESS,'fach','template_public',trunc(sysdate))
 
---schul_events
+--schulevents
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'schul_events','template_public',trunc(sysdate))
+(S_TABLESS,'schulevents','template_public',trunc(sysdate))
 
 --arbeiten
 insert into TABLESS
@@ -66,41 +66,41 @@ insert into TABLESS
 VALUES
 (S_TABLESS,'fach','template_public',trunc(sysdate))
 
---kurs-events-ref
+--kursschuleventsref
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'kurs-events-ref','template_public',trunc(sysdate))
+(S_TABLESS,'kursschuleventsref','template_public',trunc(sysdate))
 
---kurs-stunden-ref
+--kursstundenref
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'kurs-stunden-ref','template_public',trunc(sysdate))
+(S_TABLESS,'kursstundenref','template_public',trunc(sysdate))
 
---kurs-schueler-ref
+--kursschuelerref
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'kurs-schueler-ref','template_public',trunc(sysdate))
+(S_TABLESS,'kursschuelerref','template_public',trunc(sysdate))
 
---lehrer-fach-ref
+--lehrerfachref
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'lehrer-fach-ref','template_public',trunc(sysdate))
+(S_TABLESS,'lehrerfachref','template_public',trunc(sysdate))
 
---noten-schueler-ref
+--notenschuelerref
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'noten-schueler-ref','template_public',trunc(sysdate))
+(S_TABLESS,'notenschuelerref','template_public',trunc(sysdate))
 
---userss-permissions-ref
+--USERRPERMISSIONNREF
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'userss-permissions-ref','template_public',trunc(sysdate))
+(S_TABLESS,'USERRPERMISSIONNREF','template_public',trunc(sysdate))
 
 --TABLESS
 insert into TABLESS
@@ -108,17 +108,17 @@ insert into TABLESS
 VALUES
 (S_TABLESS,'TABLESS','template_public',trunc(sysdate)
 
---LOGSS
+--LOGS
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'LOGSS','template_public',trunc(sysdate)
+(S_TABLESS,'LOGS','template_public',trunc(sysdate)
 
---USERSS
+--USERR
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'USERSS','template_public',trunc(sysdate)
+(S_TABLESS,'USERR','template_public',trunc(sysdate)
 
 --DELL
 insert into TABLESS
@@ -126,11 +126,11 @@ insert into TABLESS
 VALUES
 (S_TABLESS,'DELL','template_public',trunc(sysdate)
 
---PERMISSIONS
+--PERMISSIONN
 insert into TABLESS
 (TABLESS_id,table_name,cre_userid,cre_date)
 VALUES
-(S_TABLESS,'PERMISSIONS','template_public',trunc(sysdate)
+(S_TABLESS,'PERMISSIONN','template_public',trunc(sysdate)
 
 
 

@@ -16,7 +16,7 @@ cycle;
 -- Create table
 create table noten
 (
-  noten_id                      NUMBER(10) not null,
+  noten_id                      NUMBER(10) not null PRIMARY KEY,
   score                         NUMBER(2) not null,
   ntype                         VARCHAR(10)  not null,
   kommentar				        VARCHAR2(200),
@@ -24,7 +24,7 @@ create table noten
   ndate                         DATE,
   anz_year                      VARCHAR2(100),
   kurs_id                       NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -104,7 +104,7 @@ cycle;
 -- Create table
 create table lehrer
 (
-  lehrer_id                     NUMBER(10) not null,
+  lehrer_id                     NUMBER(10) not null PRIMARY KEY,
   vorname                       VARCHAR(30) not null,
   nachname                      VARCHAR(30) not null,
   vorname2                      VARCHAR(30) not null,
@@ -115,7 +115,7 @@ create table lehrer
   origin                        VARCHAR(1) not null,
   adresse                       VARCHAR(300) not null,
   gebdatum                      DATE,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -199,7 +199,7 @@ cycle;
 -- Create table
 create table schueler
 (
-  schueler_id                   NUMBER(10) not null,
+  schueler_id                   NUMBER(10) not null PRIMARY KEY,
   vorname                       VARCHAR(30) not null,
   nachname                      VARCHAR(30) not null,
   vorname2                      VARCHAR(30) not null,
@@ -210,7 +210,7 @@ create table schueler
   adresse                       VARCHAR(300) not null,
   salter                        NUMBER(2) not null,
   gebdatum                      DATE,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -294,9 +294,9 @@ cycle;
 -- Create table
 create table fach
 (
-  fach_id                       NUMBER(10) not null,
+  fach_id                       NUMBER(10) not null PRIMARY KEY,
   fname                         VARCHAR(40) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -372,10 +372,10 @@ cycle;
 -- Create table
 create table stunden
 (
-  stunden_id                    NUMBER(10) not null,
+  stunden_id                    NUMBER(10) not null PRIMARY KEY,
   sday                          VARCHAR(20) not null,
   scount                        NUMBER(2) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -450,12 +450,12 @@ cycle;
 -- Create table
 create table arbeiten
 (
-  arbeiten_id                   NUMBER(10) not null,
+  arbeiten_id                   NUMBER(10) not null PRIMARY KEY,
   atype                         VARCHAR(3) not null,
   kurs_id                       NUMBER(10) not null,
   datum                         DATE not null,
   acount                        NUMBER(10),
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -536,10 +536,10 @@ cycle;
 -- Create table
 create table schulevents
 (
-  schulevents_id                NUMBER(10) not null,
+  schulevents_id                NUMBER(10) not null PRIMARY KEY,
   descript                      VARCHAR(200) not null,
   datum                         DATE not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -614,10 +614,10 @@ cycle;
 -- Create table
 create table kalender
 (
-  kalender_id                   NUMBER(10) not null,
+  kalender_id                   NUMBER(10) not null PRIMARY KEY,
   descript                      VARCHAR(200) not null,
   datum                         DATE not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -690,12 +690,12 @@ cycle;
 -- Create table
 create table kurs
 (
-  kurs_id                       NUMBER(10) not null,
+  kurs_id                       NUMBER(10) not null PRIMARY KEY,
   lehrer_id                     NUMBER(10) not null,
   fach_id                       NUMBER(10) not null,
   stundenzahl                   NUMBER(2) not null,
   stufe                         NUMBER(2) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -774,10 +774,10 @@ cycle;
 -- Create table
 create table notenschuelerref
 (
-  notenschuelerref_id           NUMBER(10) not null,
+  notenschuelerref_id           NUMBER(10) not null PRIMARY KEY,
   noten_id                      NUMBER(10) not null,
   schueler_id                   NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -850,10 +850,10 @@ cycle;
 -- Create table
 create table lehrerfachref
 (
-  lehrerfachref_id              NUMBER(10) not null,
+  lehrerfachref_id              NUMBER(10) not null PRIMARY KEY,
   lehrer_id                     NUMBER(10) not null,
   fach_id                       NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -927,10 +927,10 @@ cycle;
 -- Create table
 create table kursschuelerref
 (
-  kursschuelerref_id            NUMBER(10) not null,
+  kursschuelerref_id            NUMBER(10) not null PRIMARY KEY,
   kurs_id                       NUMBER(10) not null,
   schueler_id                   NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1006,10 +1006,10 @@ cycle;
 -- Create table
 create table kursschuleventsref
 (
-  kursschuleventsref_id         NUMBER(10) not null,
+  kursschuleventsref_id         NUMBER(10) not null PRIMARY KEY,
   kurs_id                       NUMBER(10) not null,
   schulevents_id                NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1083,10 +1083,10 @@ cycle;
 -- Create table
 create table kursstundenref
 (
-  kursstundenref_id             NUMBER(10) not null,
+  kursstundenref_id             NUMBER(10) not null PRIMARY KEY,
   kurs_id                       NUMBER(10) not null,
   stunden_id                    NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1159,12 +1159,12 @@ cycle;
 -- Create table
 create table LOGS
 (
-  LOGS_id                        NUMBER(10) not null,
+  LOGS_id                       NUMBER(10) not null PRIMARY KEY,
   table_id                      NUMBER(10) not null,
   updt_user                     VARCHAR2(30) ,
   update_type                   VARCHAR2(30) ,
-  LOG_message                       VARCHAR2(50) ,
-  cre_userid                    VARCHAR2(30) not null,
+  LOG_message                   VARCHAR2(50) ,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1238,9 +1238,9 @@ cycle;
 -- Create table
 create table DELL
 (
-  DELL_id                       NUMBER(10) not null,
+  DELL_id                       NUMBER(10) not null PRIMARY KEY,
   memory_location               VARCHAR2(500) ,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1313,9 +1313,9 @@ cycle;
 -- Create table
 create table TABLESS
 (
-  TABLESS_id                    NUMBER(10) not null,
+  TABLESS_id                    NUMBER(10) not null PRIMARY KEY,
   table_name                    VARCHAR(50)not null ,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1386,14 +1386,14 @@ cycle;
 -- Create table
 create table USERR
 (
-  USERR_id                      NUMBER(10) not null,
+  USERR_id                      NUMBER(10) not null PRIMARY KEY,
   user_short                    VARCHAR(30)not null ,
   userdate                      DATE not null,
   vorname                       VARCHAR(30) not null,
   nachname                      VARCHAR(30) not null,
   vorname2                      VARCHAR2(30) ,
   user_rank                     VARCHAR(30) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1468,10 +1468,10 @@ cycle;
 -- Create table
 create table PERMISSIONN
 (
-  PERMISSIONN_id                NUMBER(10) not null,
+  PERMISSIONN_id                NUMBER(10) not null PRIMARY KEY,
   table_name                    VARCHAR(50)not null ,
   table_scope                   VARCHAR(30) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -1545,10 +1545,10 @@ cycle;
 -- Create table
 create table USERRPERMISSIONNREF
 (
-  USERRPERMISSIONNREF_id        NUMBER(10) not null,
+  USERRPERMISSIONNREF_id        NUMBER(10) not null PRIMARY KEY,
   USERR_id                      NUMBER(10)not null ,
   PERMISSIONN_id                NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE

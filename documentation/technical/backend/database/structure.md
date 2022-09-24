@@ -41,26 +41,26 @@ This structure was chosen as a result of different facotrs and requirements set 
 
 | Table_name                                                                        | table_id | table_usecase |
 |-----------------------------------------------------------------------------------|----------|---------------|
-| [kurse](./linked_resources/tables/data/kurse.md)                                  | 1        | data          |
+| [kurs](./linked_resources/tables/data/kurs.md)                                    | 1        | data          |
 | [stunden](./linked_resources/tables/data/stunden.md)                              | 2        | data          |
 | [fach](./linked_resources/tables/data/fach.md)                                    | 3        | data          |
-| [Schul_events](./linked_resources/tables/data/schul_events.md)                    | 4        | data          |
+| [schulevents](./linked_resources/tables/data/schulevents.md)                      | 4        | data          |
 | [arbeiten](./linked_resources/tables/data/arbeiten.md)                            | 5        | data          |
 | [kalender](./linked_resources/tables/data/kalender.md)                            | 6        | data          |
 | [schueler](./linked_resources/tables/data/schueler.md)                            | 7        | data          |
 | [noten](./linked_resources/tables/data/noten.md)                                  | 8        | data          |
 | [lehrer](./linked_resources/tables/data/lehrer.md)                                | 9        | data          |
 | [fach](./linked_resources/tables/data/fach.md)                                    | 10       | data          |
-| [kurse-events-ref](./linked_resources/tables/ref/kurse-events-ref.md)             | 11       | ref           |
-| [kurse-stunden-ref](./linked_resources/tables/ref/kurse-stunden-ref.md)           | 12       | ref           |
-| [kurs-schueler-ref](./linked_resources/tables/ref/kurs-schueler-ref.md)           | 13       | ref           |
-| [lehrer-fach-ref](./linked_resources/tables/ref/lehrer-fach-ref.md)               | 14       | ref           |
-| [noten-schueler-ref](./linked_resources/tables/ref/noten-schueler-ref.md)         | 15       | ref           |
-| [userss-permissions-ref](./linked_resources/tables/ref/userss-permissions-ref.md) | 16       | ref           |
+| [kursschuleventsref](./linked_resources/tables/ref/kursschuleventsref.md)         | 11       | ref           |
+| [kursstundenref](./linked_resources/tables/ref/kursstundenref.md)                 | 12       | ref           |
+| [kursschuelerref](./linked_resources/tables/ref/kursschuelerref.md)               | 13       | ref           |
+| [lehrerfachref](./linked_resources/tables/ref/lehrerfachref.md)                   | 14       | ref           |
+| [notenschuelerref](./linked_resources/tables/ref/notenschuelerref.md)             | 15       | ref           |
+| [USERRPERMISSIONNREF](./linked_resources/tables/ref/USERRPERMISSIONNREF.md)       | 16       | ref           |
 | [TABLESS](./linked_resources/tables/sys/TABLESS.md)                               | 17       | system        |
-| [LOGSS](./linked_resources/tables/sys/LOGSS.md)                                   | 18       | system        |
-| [USERSS](./linked_resources/tables/sys/USERSS.md)                                 | 19       | system        |
+| [LOGS](./linked_resources/tables/sys/LOGS.md)                                     | 18       | system        |
+| [USERR](./linked_resources/tables/sys/USERR.md)                                   | 19       | system        |
 | [DELL](./linked_resources/tables/sys/DELL.md)                                     | 20       | system        |
-| [PERMISSIONS](./linked_resources/tables/sys/PERMISSIONS.md)                       | 21       | system        |
+| [PERMISSIONN](./linked_resources/tables/sys/PERMISSIONN.md)                       | 21       | system        |
 
 - NOTE: some table names are misspelled on purpose since oracle reserves some keywords like logs, users et.
