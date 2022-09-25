@@ -16,10 +16,10 @@ cycle;
 -- Create table
 create table stunden
 (
-  stunden_id                    NUMBER(10) not null,
+  stunden_id                    NUMBER(10) not null PRIMARY KEY,
   sday                          VARCHAR(20) not null,
   scount                        NUMBER(2) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -73,4 +73,3 @@ create index IDX_stunden02 on stunden (stunden_id,sday,scount,cre_date,cre_useri
     minextents 1
     maxextents unlimited
   );
-

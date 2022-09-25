@@ -14,12 +14,12 @@ cycle;
 -- Create table
 create table arbeiten
 (
-  arbeiten_id                   NUMBER(10) not null,
+  arbeiten_id                   NUMBER(10) not null PRIMARY KEY,
   atype                         VARCHAR(3) not null,
   kurs_id                       NUMBER(10) not null,
   datum                         DATE not null,
   acount                        NUMBER(10),
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -75,9 +75,4 @@ create index IDX_arbeiten02 on arbeiten (arbeiten_id,atype,kurs_id,datum,acount,
     minextents 1
     maxextents unlimited
   );
-
-
-
-
-
 

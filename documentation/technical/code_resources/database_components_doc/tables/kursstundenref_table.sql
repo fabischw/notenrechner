@@ -15,10 +15,10 @@ cycle;
 -- Create table
 create table kursstundenref
 (
-  kursstundenref_id             NUMBER(10) not null,
+  kursstundenref_id             NUMBER(10) not null PRIMARY KEY,
   kurs_id                       NUMBER(10) not null,
   stunden_id                    NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -72,5 +72,4 @@ create index IDX_kursstundenref02 on kursstundenref (kursstundenref_id,kurs_id,s
     minextents 1
     maxextents unlimited
   );
-  
   

@@ -14,10 +14,10 @@ cycle;
 -- Create table
 create table lehrerfachref
 (
-  lehrerfachref_id              NUMBER(10) not null,
+  lehrerfachref_id              NUMBER(10) not null PRIMARY KEY,
   lehrer_id                     NUMBER(10) not null,
   fach_id                       NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE

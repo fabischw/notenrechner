@@ -12,11 +12,11 @@ cycle;
 
 
 -- Create table
-create table DELLL
+create table DELL
 (
-  DELL_id                       NUMBER(10) not null,
+  DELL_id                       NUMBER(10) not null PRIMARY KEY,
   memory_location               VARCHAR2(500) ,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE

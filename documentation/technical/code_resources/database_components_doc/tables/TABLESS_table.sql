@@ -14,9 +14,9 @@ cycle;
 -- Create table
 create table TABLESS
 (
-  TABLESS_id                    NUMBER(10) not null,
+  TABLESS_id                    NUMBER(10) not null PRIMARY KEY,
   table_name                    VARCHAR(50)not null ,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -69,5 +69,3 @@ create index IDX_TABLESS02 on TABLESS (TABLESS_id,table_name,cre_date,cre_userid
     minextents 1
     maxextents unlimited
   );
-   
-  

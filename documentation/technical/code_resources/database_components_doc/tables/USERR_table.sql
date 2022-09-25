@@ -13,14 +13,14 @@ cycle;
 -- Create table
 create table USERR
 (
-  USERR_id                      NUMBER(10) not null,
+  USERR_id                      NUMBER(10) not null PRIMARY KEY,
   user_short                    VARCHAR(30)not null ,
   userdate                      DATE not null,
   vorname                       VARCHAR(30) not null,
   nachname                      VARCHAR(30) not null,
   vorname2                      VARCHAR2(30) ,
   user_rank                     VARCHAR(30) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE

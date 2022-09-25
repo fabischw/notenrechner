@@ -15,10 +15,10 @@ cycle;
 -- Create table
 create table kalender
 (
-  kalender_id                   NUMBER(10) not null,
+  kalender_id                   NUMBER(10) not null PRIMARY KEY,
   descript                      VARCHAR(200) not null,
   datum                         DATE not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -38,12 +38,12 @@ tablespace users
   
 -- Add comments to the columns 
 comment on column kalender.kalender_id is 'ID des kalender';
-comment on column kalender.descript is 'Beschreibung des events';
-comment on column kalender.datum is 'Datum, an welchem das Event aauftritt wird, evtnl mit Zeit';
-comment on column kalender.cre_date is 'Zeitpunkt der Eintragung der Arbeit';
-comment on column kalender.cre_userid is 'USER_ID der Eintragung der Arbeit';
-comment on column kalender.chg_date is 'm�gliches �nderungsdatum der Arbeitsdaten';
-comment on column kalender.chg_userid is 'm�glicher �nderungsuser der Arbeitsdaten';
+comment on column kalender.descript is 'Beschreibung des Events';
+comment on column kalender.datum is 'Datum, an welchem das Event auftritt wird, evtnl mit Zeit';
+comment on column kalender.cre_date is 'Zeitpunkt der Eintragung';
+comment on column kalender.cre_userid is 'USER_ID der Eintragung';
+comment on column kalender.chg_date is 'm�gliches �nderungsdatum der eingetragenen Daten';
+comment on column kalender.chg_userid is 'm�glicher �nderungsuser der eingetragenen Daten';
 
 
 create unique index IDX_PK_kalender01 on kalender (kalender_id)
@@ -72,4 +72,3 @@ create index IDX_kalender02 on kalender (kalender_id,datum,descript,cre_date,cre
     minextents 1
     maxextents unlimited
   );
-  

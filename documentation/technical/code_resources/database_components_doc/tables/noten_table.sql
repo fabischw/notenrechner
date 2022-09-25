@@ -13,7 +13,7 @@ cycle;
 -- Create table
 create table noten
 (
-  noten_id                      NUMBER(10) not null,
+  noten_id                      NUMBER(10) not null PRIMARY KEY,
   score                         NUMBER(2) not null,
   ntype                         VARCHAR(10)  not null,
   kommentar				        VARCHAR2(200),
@@ -21,7 +21,7 @@ create table noten
   ndate                         DATE,
   anz_year                      VARCHAR2(100),
   kurs_id                       NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -80,4 +80,3 @@ create index IDX_noten02 on noten (noten_id,score,ntype,kurs_id,doclink,ndate,cr
     minextents 1
     maxextents unlimited
   );
-

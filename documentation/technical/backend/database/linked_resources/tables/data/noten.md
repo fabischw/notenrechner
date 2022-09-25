@@ -1,5 +1,6 @@
 # noten table 
 - Daten zu Noten von Arbeiten
+- [Link zu SQL code für Implementierung](../../../../../code_resources/database_components_doc/tables/noten_table.sql)
 
 | column_count | column_name | column data                                          | data type     | required(y/n) | key(PK/FK/null) | has Index(y/n) |
 |--------------|-------------|------------------------------------------------------|---------------|---------------|-----------------|----------------|

@@ -14,10 +14,10 @@ cycle;
 -- Create table
 create table kursschuelerref
 (
-  kursschuelerref_id            NUMBER(10) not null,
+  kursschuelerref_id            NUMBER(10) not null PRIMARY KEY,
   kurs_id                       NUMBER(10) not null,
   schueler_id                   NUMBER(10) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE

@@ -13,10 +13,10 @@ cycle;
 -- Create table
 create table PERMISSIONN
 (
-  PERMISSIONN_id                NUMBER(10) not null,
+  PERMISSIONN_id                NUMBER(10) not null PRIMARY KEY,
   table_name                    VARCHAR(50)not null ,
   table_scope                   VARCHAR(30) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -70,3 +70,4 @@ create index IDX_PERMISSIONN02 on PERMISSIONN (PERMISSIONN_id,table_name,table_s
     minextents 1
     maxextents unlimited
   );
+

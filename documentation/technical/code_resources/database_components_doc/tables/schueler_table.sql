@@ -15,7 +15,7 @@ cycle;
 -- Create table
 create table schueler
 (
-  schueler_id                   NUMBER(10) not null,
+  schueler_id                   NUMBER(10) not null PRIMARY KEY,
   vorname                       VARCHAR(30) not null,
   nachname                      VARCHAR(30) not null,
   vorname2                      VARCHAR(30) not null,
@@ -26,7 +26,7 @@ create table schueler
   adresse                       VARCHAR(300) not null,
   salter                        NUMBER(2) not null,
   gebdatum                      DATE,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -88,5 +88,3 @@ create index IDX_schueler02 on schueler (schueler_id,vorname,nachnanme,vorname2,
     minextents 1
     maxextents unlimited
   );
-  
-  

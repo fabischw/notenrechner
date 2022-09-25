@@ -14,7 +14,7 @@ cycle;
 -- Create table
 create table lehrer
 (
-  lehrer_id                     NUMBER(10) not null,
+  lehrer_id                     NUMBER(10) not null PRIMARY KEY,
   vorname                       VARCHAR(30) not null,
   nachname                      VARCHAR(30) not null,
   vorname2                      VARCHAR(30) not null,
@@ -25,7 +25,7 @@ create table lehrer
   origin                        VARCHAR(1) not null,
   adresse                       VARCHAR(300) not null,
   gebdatum                      DATE,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -87,5 +87,3 @@ create index IDX_lehrer02 on lehrer (lehrer_id,vorname,nachnanme,vorname2,email,
     minextents 1
     maxextents unlimited
   );
-
-

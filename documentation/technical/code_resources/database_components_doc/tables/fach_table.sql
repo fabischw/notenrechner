@@ -15,9 +15,9 @@ cycle;
 -- Create table
 create table fach
 (
-  fach_id                       NUMBER(10) not null,
+  fach_id                       NUMBER(10) not null PRIMARY KEY,
   fname                         VARCHAR(40) not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -70,5 +70,3 @@ create index IDX_fach02 on fach (fach_id,fname,cre_date,cre_userid,chg_date,chg_
     minextents 1
     maxextents unlimited
   );
-
-

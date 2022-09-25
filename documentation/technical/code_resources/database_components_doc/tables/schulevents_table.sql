@@ -15,10 +15,10 @@ cycle;
 -- Create table
 create table schulevents
 (
-  schulevents_id                NUMBER(10) not null,
+  schulevents_id                NUMBER(10) not null PRIMARY KEY,
   descript                      VARCHAR(200) not null,
   datum                         DATE not null,
-  cre_userid                    VARCHAR2(30) not null,
+  cre_userid                    VARCHAR(30) not null,
   cre_date                      DATE not null,
   chg_userid                    VARCHAR2(30),
   chg_date                      DATE
@@ -72,5 +72,3 @@ create index IDX_schulevents02 on schulevents (schulevents_id,datum,descript,cre
     minextents 1
     maxextents unlimited
   );
-
-
