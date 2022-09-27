@@ -49,3 +49,5 @@ This is a  project to track my school grades and courses, for further informatio
 ### LICENSE
 - [LICENSE](./LICENSE)
 - NOTE: LICENSE DOES NOT INCLUDE planing folder!!, check the planing folder license [here](./planing/LICENSE)
+
+### [DOCUMENTATION](./documentation/README.md)
