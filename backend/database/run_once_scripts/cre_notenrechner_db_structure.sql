@@ -207,7 +207,7 @@ create table schueler
   an_schule_seit                DATE,
   schule                        VARCHAR(2) not null,
   stufe                         NUMBER(2) not null,
-  adresse                       VARCHAR(300) not null,
+  adresse                       VARCHAR2(300),
   salter                        NUMBER(2) not null,
   gebdatum                      DATE,
   cre_userid                    VARCHAR(30) not null,
