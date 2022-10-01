@@ -19,6 +19,22 @@
 <details>
 <summary>backend/database/structure</summary>
 
+- [kalender.md](./technical/backend/database/linked_resources/tables/data/kalender.md)
+- [stunden.md](./technical/backend/database/linked_resources/tables/data/stunden.md)
+- [kursschuelerref.md](./technical/backend/database/linked_resources/tables/ref/kursschuelerref.md)
+- [kursstundenref.md](./technical/backend/database/linked_resources/tables/ref/kursstundenref.md)
+- [kursschuleventsref.md](./technical/backend/database/linked_resources/tables/ref/kursschuleventsref.md)
+- [lehrerfachref.md](./technical/backend/database/linked_resources/tables/ref/lehrerfachref.md)
+- [notenschuelerref.md](./technical/backend/database/linked_resources/tables/ref/notenschuelerref.md)
+- [USERSPERMISSIONSREF.md](./technical/backend/database/linked_resources/tables/ref/USERSPERMISSIONSREF.md)
+- [DELL.md](./technical/backend/database/linked_resources/tables/sys/DELL.md)
+- [LOGS.md](./technical/backend/database/linked_resources/tables/sys/LOGS.md)
+- [PERMISSIONN.md](./technical/backend/database/linked_resources/tables/sys/PERMISSIONN.md)
+- [TABLESS.md](./technical/backend/database/linked_resources/tables/sys/TABLESS.md)
+- [USERR.md](./technical/backend/database/linked_resources/tables/sys/USERR.md)
+
+
+
 
 </details>
 

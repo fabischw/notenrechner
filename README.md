@@ -18,8 +18,8 @@ This is a  project to track my school grades and courses, for further informatio
 - this repository is meant for development only
 - Clicking any of the provided links is considered 'Use at your own risk' since I cannot guarantee the safety of those external websites
 
-### CONTRIBUTING
-- At this point in time I do not plan to open this project to the general public and with that to contributions, I might publish this project when it reaches a production-ready state
+### [CONTRIBUTING](./CONTRIBUTING.md)
+- NOTE: At this point in time I do not plan to open this project to the general public and with that to contributions, I might publish this project when it reaches a production-ready state
 
 </details>
 
@@ -33,8 +33,9 @@ This is a  project to track my school grades and courses, for further informatio
 - Dieses Repository wird nur für die Entwicklung verwendet
 - Anklicken der bereitgestellten Links fällt unter Nutzung auf eigenes Risiko, da ich nicht für die Sicherheit der verlinkten websites garantieren kann
 
-### BEITRAGEN
-- Aktuell ist nicht vorgesehen, dieses Projekt der Öffentlichkeit zugänglich zu machen. Somit sind aktuell keine Beiträge erwünscht. Das Projekt wird vielleicht veröffentlicht, wenn es ausgereift genug ist.
+### [BEITRAGEN](./CONTRIBUTING.md)
+- HINWEIS: Aktuell ist nicht vorgesehen, dieses Projekt der Öffentlichkeit zugänglich zu machen. Somit sind aktuell keine Beiträge erwünscht. Das Projekt wird vielleicht veröffentlicht, wenn es ausgereift genug ist.
+- HINWEIS: contributing guidelines sind aktuell nur auf Englisch verfügbar
 
 </details>
 
@@ -51,3 +52,5 @@ This is a  project to track my school grades and courses, for further informatio
 - NOTE: LICENSE DOES NOT INCLUDE planing folder!!, check the planing folder license [here](./planing/LICENSE)
 
 ### [DOCUMENTATION](./documentation/README.md)
+
+### [CODE OF CONDUCT](./CODE_OF_CONDUCT.md)

@@ -50,5 +50,6 @@ Note: this list is only a selection of the tools used and does not include ALL t
 
 ### graphics:
 - [canva logo designer](https://www.canva.com/create/logos/)
+- [markdown table generator](https://www.tablesgenerator.com/markdown_tables)
 
 </details>
