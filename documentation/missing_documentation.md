@@ -19,8 +19,6 @@
 <details>
 <summary>backend/database/structure</summary>
 
-- [kalender.md](./technical/backend/database/linked_resources/tables/data/kalender.md)
-- [stunden.md](./technical/backend/database/linked_resources/tables/data/stunden.md)
 - [kursschuelerref.md](./technical/backend/database/linked_resources/tables/ref/kursschuelerref.md)
 - [kursstundenref.md](./technical/backend/database/linked_resources/tables/ref/kursstundenref.md)
 - [kursschuleventsref.md](./technical/backend/database/linked_resources/tables/ref/kursschuleventsref.md)
