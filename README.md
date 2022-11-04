@@ -7,6 +7,30 @@
 This is a  project to track my school grades and courses, for further information check the notes in your corresponding language.
 
 
+<!--UPDATE section-->
+<details>
+<summary>IMPORTANT UPDATE</summary>
+
+### on the goals and purpose of this project:
+- this project's main idea and planing has been moved to the [notenrechner light repository](https://github.com/fabischw/notenrechner-light)
+- this repository you are currently looking at serves as the backend component for database linking ONLY
+    -> this means that this repository will not include a frontend or any actual components which are relevant to the end-user
+
+
+##### on the status of this repository in the project:
+- currently I focus on developing the frontend along with an easier, more simplistic layout for the Notenrechner app
+- development on this repository in it's current form (as database expansion/addon) is halted as a result of the above mentioned focus on getting a more simple product out ASAP
+
+
+##### on this project's integration into the new Notenrechner project concept:
+- the documentation from this repository has been copied to the [notenrechner light's documentation](https://github.com/fabischw/notenrechner-light/tree/main/documentation) to provide quick reference to important structure layout basics which have been adopted from this repositories data structure plans
+
+</details>
+
+
+
+
+
 <!--EN section-->
 <details>
 <summary>EN</summary>
