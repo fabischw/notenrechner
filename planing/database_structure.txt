@@ -1,1 +1,1 @@
-vgl. Database blueprints in planing/resources/database blueprints
+see Database blueprints in planing/resources/database blueprints

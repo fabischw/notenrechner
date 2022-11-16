@@ -1,6 +1,7 @@
 # CONTRIBUTING
 
-# NOTE: AT THIS POINT IN TIME, CONTRIBUTING IS NOT POSSIBLE YET
+# NOTE: AT THIS POINT IN TIME, CONTRIBUTING IS NOT POSSIBLE YET since this is core planing
+### for contributing to the user app, check [this](https://github.com/fabischw/notenrechner-light/blob/main/CONTRIBUTING.md)
 
 ### basic guidelines
 - useful changes only
