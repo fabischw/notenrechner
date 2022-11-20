@@ -51,6 +51,7 @@ This structure was chosen as a result of different facotrs and requirements set 
 | [noten](./linked_resources/tables/data/noten.md)                                  | 8        | data          |
 | [lehrer](./linked_resources/tables/data/lehrer.md)                                | 9        | data          |
 | [fach](./linked_resources/tables/data/fach.md)                                    | 10       | data          |
+| [schule](./linked_resources/tables/data/schule.md)                                | 22       | data          |
 | [kursschuleventsref](./linked_resources/tables/ref/kursschuleventsref.md)         | 11       | ref           |
 | [kursstundenref](./linked_resources/tables/ref/kursstundenref.md)                 | 12       | ref           |
 | [kursschuelerref](./linked_resources/tables/ref/kursschuelerref.md)               | 13       | ref           |
